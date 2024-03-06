@@ -17,7 +17,8 @@ public class Controller {
     @GetMapping("/resource/{id}")
     public ResponseEntity<String> getResource(@PathVariable("id") String id) {
     	String resource=" ";
-    	if(id == "1") {
+    	int numero = Integer.parseInt(resource);
+    	if(numero == 1) {
         resource = "YEAH";
         }
     	else {
