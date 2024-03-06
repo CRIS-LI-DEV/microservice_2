@@ -9,6 +9,6 @@ public class Controller {
 
     @GetMapping("/")
     public ResponseEntity<String> get() {
-        return ResponseEntity.ok("Hello from Railway + Spring!");
+        return ResponseEntity.ok("hello madafuckers");
     }
 }
