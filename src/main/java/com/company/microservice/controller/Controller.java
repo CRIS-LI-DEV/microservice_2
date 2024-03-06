@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api") // Base path for all endpoints in this controller
 public class Controller {
-
+	int[] numeros = {1, 2, 3, 4, 5};
     // Endpoint to greet users
     @GetMapping("/greet")
     public ResponseEntity<String> greet() {
@@ -16,8 +16,13 @@ public class Controller {
     // Endpoint to get a specific resource
     @GetMapping("/resource/{id}")
     public ResponseEntity<String> getResource(@PathVariable("id") String id) {
-        // Logic to retrieve the resource with the given ID from the database or any other source
-        String resource = "Resource with ID " + id;
+    	String resource=" ";
+    	if(id == "1") {
+        resource = "YEAH";
+        }
+    	else {
+    		resource="YOU LOSE";
+    	}
         return ResponseEntity.ok(resource);
     }
 
