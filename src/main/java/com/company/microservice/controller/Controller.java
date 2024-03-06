@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api") // Base path for all endpoints in this controller
 public class Controller {
-	int[] numeros = {1, 2, 3, 4, 5};
+	
     // Endpoint to greet users
     @GetMapping("/greet")
     public ResponseEntity<String> greet() {
